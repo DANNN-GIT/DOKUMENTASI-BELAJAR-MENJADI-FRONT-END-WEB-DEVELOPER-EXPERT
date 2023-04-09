@@ -1,3 +1,2 @@
-# Mengabaikan folder node_modules dan file package-lock.json
+# Mengabaikan folder node_modules
 node_modules
-package-lock.json
