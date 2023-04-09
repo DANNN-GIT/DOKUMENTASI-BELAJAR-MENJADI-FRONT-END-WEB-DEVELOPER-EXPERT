@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Alkatra', cursive;
+   color: #2b2b2b;
+}
+main { margin-top: 2%; }
+.best-product {
+   padding: 40px;
+}
+.best-product h1 {
+   text-align: center;
+}
+.best-product hr {
+   border: 2px solid coral;
+   margin: auto;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   width: 12%;
+}
+.product-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 2%;
+}
+.product-item {
+   width: 100%;
+   margin-bottom: 4%;
+   box-shadow: 0px 1px 6px 0px #ddd;
+   border-radius: 8px;
+}
+.product-item img {
+   width: 100%;
+}
+.product-detail {
+   padding: 20px;
+}
+.product-detail h2 {
+   color: coral;
+}
+.product-detail p {
+   margin: 10px 0px;
+}
+.product-detail a {
+   display: flex;
+   min-width: 44px;
+   min-height: 44px;
+   text-decoration: none;
+   background-color: coral;
+   color: white;
+   border-radius: 8px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 6%;
+}
+
+@media screen and (min-width: 480px) {
+   .product-item {
+      width: 100%;
+      margin-top: 4%;
+   }
+}
+@media screen and (min-width: 768px) {
+   .product-item {
+      width: 48%;
+   }
+}
+@media screen and (min-width: 1000px) {
+   .product-item {
+      width: 28%;
+   }
+}

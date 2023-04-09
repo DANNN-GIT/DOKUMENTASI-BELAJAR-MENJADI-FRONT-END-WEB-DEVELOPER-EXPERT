@@ -1,0 +1,11 @@
+body { background-color: black; color: lightskyblue; }
+
+/* Nilai pixel minimal ukuran layar sedang */
+@media screen and (min-width: 480px) {
+   h1 { color: coral; }
+}
+
+/* Nilai pixel minimal ukuran layar besar */
+@media screen and (min-width: 768px) {
+   h1 { text-align: center; }
+}
