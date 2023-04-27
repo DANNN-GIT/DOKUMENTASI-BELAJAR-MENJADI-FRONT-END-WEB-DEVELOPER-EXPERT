@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alkatra', cursive;
+  scroll-behavior: smooth;
+  color: black;
+}
+body { background-color: black; }
+#header {
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px gold;
+}
+#header .logo {
+  padding: 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+#header nav {
+  padding: 14px;
+  background-color: gold;
+}
+#header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+#header nav ul li {
+  width: 22%;
+  text-align: center;
+}
+#header nav ul li a { text-decoration: none; }
+#content-wrapper { overflow: auto; padding: 20px; }
+.container {
+  max-width: 1040px;
+  margin: 50px auto;
+}
+.artikel-trending {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px 0px gold;
+  padding: 10px;
+  border-radius: 5px;
+}
+.image-trending img {
+  width: 100%;
+}
+.content-trending h2,
+.content-trending p {
+  color: white;
+  margin: 10px 0px;
+}
+.content-trending button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+.container h2.judul {
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 2%;
+}
+.artikel-terbaru {
+  margin-bottom: 4%;
+  padding: 10px;
+  box-shadow: 0px 0px 8px 0px gold;
+  border-radius: 5px;
+}
+.image-terbaru img {
+  width: 100%;
+}
+section.content-terbaru h2, p {
+  color: white;
+}
+.box-portofolio { margin-top: 4%; }
+.item-portofolio img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 0px gold;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+form input, form button {
+  width: 100%;
+  padding: 10px;
+}
+#footer {
+  width: 100%;
+  padding: 20px;
+  background-color: gold;
+  text-align: center;
+}
+.btn-skip {
+  position: absolute;
+  height: 44px;
+  width: 10%;
+  top: -44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.btn-skip:focus {
+  top: 0;
+}
+
+@media screen and (min-width: 580px) {
+  .container form {
+    flex-direction: row;
+  }
+  form input {
+    width: 90%;
+    padding: 10px;
+  }
+  form button {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box-artikel-terbaru, .box-portofolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .artikel-terbaru {
+    width: 48%;
+  }
+  .item-portofolio {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .artikel-trending {
+    flex-direction: row;
+  }
+  .image-trending,
+  .content-trending {
+    flex: 1;
+  }
+  .content-trending {
+    padding: 0px 20px;
+  }
+  .artikel-terbaru {
+    width: 32%;
+  }
+  .item-portofolio {
+    width: 30%;
+  }
+  .item-portofolio:nth-child(2) {
+    transform: scale(1.14);
+  }
+}
