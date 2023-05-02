@@ -23,12 +23,12 @@ nonActiveHamburger.addEventListener('click', () => {
   nonActiveHamburger.setAttribute('hidden', '');
 })
 
-fetch('../restaurant-apps/src/DATA.json')
+fetch('data-restaurant.json')
   .then(response => response.json())
   .then(data => {
     for (let index = 0; index < 3; index++) {
       firstContent.innerHTML += `
-        <article class="resto-item">
+        <article class="resto-item" tabindex="0">
           <section class="header-item">
             <label>Rating ${data.restaurants[index].rating}</label>
             <img src="${data.restaurants[index].pictureId}" alt="${data.restaurants[index].name}">
@@ -41,7 +41,7 @@ fetch('../restaurant-apps/src/DATA.json')
     }
     data.restaurants.forEach(restoList => {
       fullRestoran.innerHTML += `
-        <article class="resto-item">
+        <article class="resto-item" tabindex="0">
           <section class="header-item">
             <label>${restoList.city}</label>
             <img src="${restoList.pictureId}" alt="${restoList.name}">

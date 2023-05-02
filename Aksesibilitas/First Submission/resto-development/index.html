@@ -5,41 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resto.In Ajah!</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <a href="#favorite">
-    <button id="skipToContent" tabindex="1">Skip to content</button>
-  </a>
+  <a tabindex="0" id="skipToContent" href="#gotocontent">Skip to content</a>
   <header id="header">
     <div class="header-brand">
       <h1>
         <span>Resto</span>.In
         <span>Ajah</span>!
       </h1>
-      <button id="active-hamburger" tabindex="2">☰</button>
-      <button id="nonactive-hamburger" tabindex="2" hidden>☰</button>
+      <button id="active-hamburger" tabindex="0">☰</button>
+      <button id="nonactive-hamburger" tabindex="0" hidden>☰</button>
     </div>
     <nav id="navbar">
       <ul>
-        <li><a href="#" tabindex="3">Home</a></li>
-        <li><a href="#favorite" tabindex="4">Favorite</a></li>
-        <li><a href="#booking" tabindex="5">Booking</a></li>
+        <li><a href="#" tabindex="0">Home</a></li>
+        <li><a href="#favorite" tabindex="0">Favorite</a></li>
+        <li><a href="#booking" tabindex="0">Booking</a></li>
         <li>
-          <a href="https://bit.ly/3LvoqPL" target="_blank" tabindex="6">About Us</a>
+          <a href="https://bit.ly/3LvoqPL" target="_blank" tabindex="0">About Us</a>
         </li>
       </ul>
     </nav>
   </header>
   <main id="main">
     <div class="hero-image">
-      <img src="../restaurant-apps/src/public/images/heros/hero-image_4.jpg" alt="Featured Image">
+      <img src="./images/hero-image_4.jpg" alt="Featured Image">
       <article class="hero-content">
         <h2>Solusi Tepat Mencari Restoran Terbaik di Indonesia</h2>
         <p>Resto.In Ajah adalah aplikasi penyedia daftar restoran terbaik di Indonesia yang memberikan kemudahan bagi pengguna untuk menemukan dan memesan makanan dari berbagai restoran di seluruh Indonesia dengan cepat, mudah, dan juga aman.</p>
       </article>
     </div>
-    <div class="container">
+    <div class="container" id="gotocontent">
       <h2>3 Restoran Terfavorit Saat Ini!</h2><hr>
       <div class="first-content"></div>
     </div>
@@ -53,30 +51,30 @@
         <form>
           <div class="booking-input">
             <label for="name">*Nama lengkap</label>
-            <input type="text" id="name" tabindex="7">
+            <input type="text" id="name">
           </div>
           <div class="booking-input">
             <label for="tanggal">*Tanggal booking</label>
-            <input type="date" id="tanggal" tabindex="8">
+            <input type="date" id="tanggal">
           </div>
           <div class="booking-input">
             <label for="jumlah">*Jumlah orang</label>
-            <input type="number" id="jumlah" tabindex="9">
+            <input type="number" id="jumlah">
           </div>
           <div class="booking-input">
             <label for="jam">*Jam</label>
-            <input type="text" id="jam" tabindex="10">
+            <input type="text" id="jam">
           </div>
           <div class="booking-input">
             <label for="resto">*Pilih Restoran</label>
-            <select id="resto" tabindex="11">
+            <select id="resto">
               <option>---</option>
               <option>Bring Your Phone Cafe</option>
               <option>Run The Gun</option>
               <option>Pangsit Express</option>
             </select>
           </div>
-          <div class="booking-input" tabindex="12">
+          <div class="booking-input">
             <button type="submit" onclick="alert('Hallo, fitur pemesanan ini masih dalam tahap pengembangan.')">Pesan</button>
           </div>
         </form>
@@ -86,6 +84,6 @@
   <footer id="footer">
     <i>Copyright &copy; 2023 - Resto.In Ajah! Created by Ahmad Wildan</i>
   </footer>
-  <script src="main.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
